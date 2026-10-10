@@ -1,0 +1,20 @@
+# Async TCP Port Scanner CLI
+
+A fast, lightweight, asynchronous TCP port scanner built in Python using `asyncio` and raw sockets. Designed to scan multiple ports concurrently across a target IP or hostname without requiring administrator/root privileges.
+
+---
+
+## Features
+* **Asynchronous Concurrency:** Leverages Python's `asyncio.gather` to scan large port ranges in a fraction of a second.
+* **Flexible Port Selection:** Supports default common services, specific comma-separated ports, and custom ranges (e.g., `-p 1-1024`).
+* **Service Mapping:** Automatically resolves common ports (HTTP, SSH, FTP, SMB, MySQL, RDP, etc.) to friendly service names.
+* **Zero External Dependencies:** Built entirely using Python's standard library.
+
+---
+
+## Installation & Usage
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/tcp-port-scanner.git](https://github.com/YOUR_USERNAME/tcp-port-scanner.git)
+   cd tcp-port-scanner
